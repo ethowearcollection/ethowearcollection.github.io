@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
   }
   
@@ -411,3 +410,39 @@ button:hover, .btn:hover {
         transform: translateX(-12px);
       }
       
+      @media (max-width: 768px) {
+        body {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      
+        .hero-section,
+        .content-container,
+        .product-list,
+        .intro-text,
+        .main-container {
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+        .hero-section h1,
+        .hero-section p,
+        .product-heading,
+        .section-title {
+          text-align: left !important;
+        }
+      
+        .nav {
+          justify-content: space-between;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      
+        .nav-links {
+          text-align: left;
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
