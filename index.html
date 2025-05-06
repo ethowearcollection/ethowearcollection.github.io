@@ -1,296 +1,532 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethowear Collection Salatiga</title>
-     <link rel="icon" href="img/ECS.png" type="image/png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethowear Salatiga | Sentuhan Etnik, Gaya Modern</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style-responsive.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
+  <!-- Custom Cursor (Optional) -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <header>
     <nav class="navbar">
-        <a href="#home" class="logo">
-            <img src="img/ECS.png" alt="Ethowear Collection Logo">
-        </a>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <span>Ethowear</span>
+          <span class="logo-accent">Salatiga</span>
         </div>
+        <button class="hamburger" aria-label="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#collection">Collection</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#produk" class="nav-link">Produk</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+          <li><a href="#" class="nav-link cart-icon"><i class="fas fa-shopping-bag"></i></a></li>
         </ul>
-    </nav>
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>ETHOWEAR COLLECTION SALATIGS</h1>
-            <p>Discover our premium collection of traditional Indonesian apparel</p>
-            <a href="#collection" class="btn">Explore Collection</a>
+      </nav>
+      
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Sentuhan Etnik,<br><span class="accent-text">Gaya Modern</span></h1>
+        <p>Eksplorasi fashion bernuansa budaya Indonesia dengan<br class="hide-mobile">desain kekinian yang menawan.</p>
+        <div class="cta-container">
+          <a href="#produk" class="cta-button primary">Eksplorasi Koleksi</a>
+          <a href="#tentang" class="cta-button secondary">Tentang Kami</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">Our Heritage</h2>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <p>Ethowear Collection Salatigs brings the rich cultural heritage of Indonesia to modern fashion. Our pieces blend traditional craftsmanship with contemporary design, creating unique apparel that tells the story of Indonesia's diverse cultures.</p>
-                    <p>Each garment represents generations of artisanal tradition, carefully preserved and reimagined for today's fashion landscape.</p>
-                </div>
-                <div class="about-image" data-aos="fade-left">
-                    <img src="img/jowo.webp" alt="Traditional Indonesian Textile">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="products" id="collection">
-        <div class="container">
-            <h2 class="section-title">Our Latest Collection</h2>
-            <div class="product-grid">
-                <div class="product-card" data-aos="fade-up">
-                    <div class="product-image" style="background-image: url('img/pakaian\ timur\ \(1\).webp');"></div>
-                    <div class="product-info">
-                        <h3>Eastern Heritage</h3>
-                        <p>Traditional designs from Eastern Indonesia</p>
-                        <a href="#" class="product-link">View Details</a>
-                    </div>
-                </div>
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-image" style="background-image: url('img/gelang.jpg');"></div>
-                    <div class="product-info">
-                        <h3>Handcrafted Accessories</h3>
-                        <p>Artisanal jewelry inspired by Indonesian tradition</p>
-                        <a href="#" class="product-link">View Details</a>
-                    </div>
-                </div>
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-image" style="background-image: url('img/totebag.webp');"></div>
-                    <div class="product-info">
-                        <h3>Eco-friendly Bags</h3>
-                        <p>Sustainable fashion with traditional patterns</p>
-                        <a href="#" class="product-link">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="produk" class="produk-section">
+    <div class="section-header">
+      <span class="section-subtitle">Koleksi Terbaik</span>
+      <h2>Produk Unggulan</h2>
+      <div class="section-divider"></div>
+    </div>
     
-    <section class="featured">
-        <div class="container">
-            <h2 class="section-title">Featured Collections</h2>
-            <div class="featured-grid">
-                <div class="featured-item" data-aos="fade-up">
-                    <img src="img/timor.webp" alt="Timor Collection">
-                    <div class="featured-content">
-                        <h3>Timor Collection</h3>
-                        <p>Discover the unique designs of Timor</p>
-                        <a href="#" class="btn btn-outline">Explore</a>
-                    </div>
-                </div>
-                <div class="featured-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="img/jowo.webp" alt="Javanese Collection">
-                    <div class="featured-content">
-                        <h3>Javanese Collection</h3>
-                        <p>Elegance from Central Java</p>
-                        <a href="#" class="btn btn-outline">Explore</a>
-                    </div>
-                </div>
+    <!--<div class="produk-filter">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="pakaian">Pakaian</button>
+      <button class="filter-btn" data-filter="aksesoris">Aksesoris</button>
+      <button class="filter-btn" data-filter="tas">Tas</button>
+    </div>-->
+    
+    <div class="produk-list">
+      <div class="produk-card" data-category="pakaian">
+        <div class="produk-img-container">
+          <img src="img/kaos gpt.png" alt="Baju Etnik Bali" />
+          <div class="produk-overlay">
+            <div class="produk-actions">
+              <button class="action-btn"><i class="fas fa-heart"></i></button>
+              <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="action-btn"><i class="fas fa-search"></i></button>
             </div>
+          </div>
+          <span class="produk-tag">From East Indonesia</span>
         </div>
-    </section>
-
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <h2 class="section-title">Cultural Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item" data-aos="fade-up">
-                    <img src="img/apparel1.jpg" alt="Traditional Apparel">
-                    <div class="gallery-overlay">
-                        <span>Traditional Wear</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="img/pakaian papua.jpg" alt="Papuan Traditional Dress">
-                    <div class="gallery-overlay">
-                        <span>Papuan Heritage</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/pakaian bali.png" alt="Balinese Traditional Dress">
-                    <div class="gallery-overlay">
-                        <span>Balinese Elegance</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="img/pakaian batak.jpg" alt="Batak Traditional Dress">
-                    <div class="gallery-overlay">
-                        <span>Batak Tradition</span>
-                    </div>
-                </div>
+        <div class="produk-info">
+          <h3>Baju Etnik Bagian Timur</h3>
+          <p>Desain unik, bahan nyaman premium</p>
+          <div class="produk-bottom">
+            <span class="harga">Rp150.000</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Customer Stories</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card" data-aos="fade-up">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="/api/placeholder/60/60" alt="Customer">
-                        </div>
-                        <div>
-                            <h4>Sarah Johnson</h4>
-                            <p>Cultural Enthusiast</p>
-                        </div>
-                    </div>
-                    <p>"The craftsmanship in these pieces is extraordinary. I feel connected to Indonesian heritage whenever I wear them."</p>
-                </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="/api/placeholder/60/60" alt="Customer">
-                        </div>
-                        <div>
-                            <h4>Michael Chen</h4>
-                            <p>Fashion Designer</p>
-                        </div>
-                    </div>
-                    <p>"The attention to detail and authenticity of patterns shows a deep respect for cultural traditions."</p>
-                </div>
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="/api/placeholder/60/60" alt="Customer">
-                        </div>
-                        <div>
-                            <h4>Emma Davis</h4>
-                            <p>Travel Blogger</p>
-                        </div>
-                    </div>
-                    <p>"Every piece tells a story of Indonesia's rich cultural tapestry. These are more than clothes—they're wearable art."</p>
-                </div>
+      </div>
+  
+      <div class="produk-card" data-category="tas">
+        <div class="produk-img-container">
+          <img src="img/kaos1.png" alt="Totebag Etnik" />
+          <div class="produk-overlay">
+            <div class="produk-actions">
+              <button class="action-btn"><i class="fas fa-heart"></i></button>
+              <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="action-btn"><i class="fas fa-search"></i></button>
             </div>
+          </div>
+          <span class="produk-tag">New</span>
         </div>
-    </section>
-
-    <section class="newsletter">
-        <div class="container">
-            <h2 class="section-title light">Join Our Community</h2>
-            <p>Subscribe for exclusive access to new collections and cultural stories</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3 class="footer-title">Ethowear Collection</h3>
-                    <p>Preserving Indonesian heritage through contemporary fashion.</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                    
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#collection">Collection</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Help</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns Policy</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li>Email: info@ethowear.com</li>
-                        <li>Phone: +62 123 4567 890</li>
-                        <li>Address: Jl. Cultural Heritage No. 123, Indonesia</li>
-                    </ul>
-                </div>
+        <div class="produk-info">
+          <h3>Baju Etnik Bagian Barat</h3>
+          <p>Bahan dan Percetakan Premium</p>
+          <div class="produk-bottom">
+            <span class="harga">Rp150.000</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ethowear Collection Salatigs. All rights reserved.</p>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+  
+     <!-- <div class="produk-card" data-category="aksesoris">
+        <div class="produk-img-container">
+          <img src="img/pakaian batak.jpg" alt="Aksesoris Etnik" />
+          <div class="produk-overlay">
+            <div class="produk-actions">
+              <button class="action-btn"><i class="fas fa-heart"></i></button>
+              <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="action-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="produk-info">
+          <h3>Aksesoris Etnik</h3>
+          <p>Lengkapi gaya etnikmu</p>
+          <div class="produk-bottom">
+            <span class="harga">Rp15.000</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+     <!-- <div class="produk-card" data-category="pakaian">
+        <div class="produk-img-container">
+          <img src="img/pakaian bali.png" alt="Kemeja Batik Modern" />
+          <div class="produk-overlay">
+            <div class="produk-actions">
+              <button class="action-btn"><i class="fas fa-heart"></i></button>
+              <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="action-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          <span class="produk-tag">Sale</span>
+        </div>
+        <div class="produk-info">
+          <h3>Kemeja Batik Modern</h3>
+          <p>Elegan untuk acara formal</p>
+          <div class="produk-bottom">
+            <span class="harga">Rp175.000</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const hamburger = document.querySelector(".hamburger");
-            const navLinks = document.querySelector(".nav-links");
-            const navItems = document.querySelectorAll(".nav-links a");
+    <div class="view-more-container">
+      <a href="#" class="view-more-btn">Lihat Semua Koleksi <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
 
-            // Toggle menu on hamburger click
-            hamburger.addEventListener("click", function () {
-                hamburger.classList.toggle("active");
-                navLinks.classList.toggle("active");
-                document.body.style.overflow = navLinks.classList.contains("active") ? "hidden" : "auto";
-            });
+  <section class="featured-section">
+    <div class="featured-banner">
+      <h2>Koleksi Terbaru</h2>
+      <p>Dapatkan diskon hingga 15% untuk pembelian pertama
+        (s&k berlaku)
+      </p>
+      <a href="#" class="cta-button primary">Belanja Sekarang</a>
+    </div>
+  </section>
 
-            // Close menu when nav item is clicked
-            navItems.forEach(item => {
-                item.addEventListener("click", function () {
-                    hamburger.classList.remove("active");
-                    navLinks.classList.remove("active");
-                    document.body.style.overflow = "auto";
-                });
-            });
+  <section id="tentang" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="img/tentang.png" alt="Tentang Ethowear" />
+      </div>
+      <div class="about-content">
+        <span class="section-subtitle">Tentang Kami</span>
+        <h2>Perpaduan Kearifan Lokal & Desain Modern</h2>
+        <div class="section-divider"></div>
+        <p>Ethowear Salatiga lahir dari kecintaan kami terhadap kekayaan budaya Indonesia. Kami menghadirkan produk fashion yang memadukan kearifan lokal dengan gaya modern agar tetap relevan dan stylish.</p>
+        <p>Setiap produk dibuat dengan cinta oleh pengrajin lokal terbaik, menggunakan material berkualitas dan proses produksi yang bertanggung jawab.</p>
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <span>100% Buatan Lokal</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Bahan Berkualitas</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Desain Ekslusif</span>
+          </div>
+        </div>
+        <a href="#" class="cta-button secondary">Baca Selengkapnya</a>
+      </div>
+    </div>
+  </section>
 
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!hamburger.contains(e.target) && 
-                    !navLinks.contains(e.target) && 
-                    navLinks.classList.contains('active')) {
-                    hamburger.classList.remove('active');
-                    navLinks.classList.remove('active');
-                    document.body.style.overflow = 'auto';
-                }
-            });
+ <!-- <section class="testimonial-section">
+    <div class="section-header center">
+      <span class="section-subtitle">Testimoni</span>
+      <h2>Apa Kata Mereka?</h2>
+      <div class="section-divider"></div>
+    </div>
+    
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Baju dari Ethowear selalu jadi andalan saya untuk acara formal. Bahannya nyaman dan desainnya selalu mendapat pujian!"</p>
+        <div class="testimonial-author">
+          <img src="/api/placeholder/50/50" alt="Testimonial" />
+          <div>
+            <h4>Anisa Wijaya</h4>
+            <span>Fashion Enthusiast</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Totebag etniknya awet banget dan motifnya nggak pasaran. Sudah 2 tahun pakai masih bagus seperti baru!"</p>
+        <div class="testimonial-author">
+          <img src="/api/placeholder/50/50" alt="Testimonial" />
+          <div>
+            <h4>Budi Santoso</h4>
+            <span>Pelanggan Setia</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Pelayanannya ramah dan produknya berkualitas. Suka banget dengan konsep etnik modernnya yang unik!"</p>
+        <div class="testimonial-author">
+          <img src="/api/placeholder/50/50" alt="Testimonial" />
+          <div>
+            <h4>Dian Permata</h4>
+            <span>Influencer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
 
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
-                    hamburger.classList.remove('active');
-                    navLinks.classList.remove('active');
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
-    </script>
+Hubungi Kami</span>
+      <h2>Kami Siap Membantu</h2>
+      <div class="section-divider"></div>
+    </div>
+    
+    <div class="kontak-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="kontak-info">
+        <div class="kontak-item">
+          <div class="kontak-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h3>Lokasi</h3>
+            <p>Jl. Diponegoro No. 123, Salatiga</p>
+          </div>
+        </div>
+        
+        <div class="kontak-item">
+          <div class="kontak-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p>ethowearcollection@email.com</p>
+          </div>
+        </div>
+        
+        <div class="kontak-item">
+          <div class="kontak-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div>
+            <h3>Telepon</h3>
+            <p>+62 8123 4567 890</p>
+          </div>
+        </div>
+        
+        <div class="kontak-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="kontak-form">
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Nama Lengkap" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Alamat Email" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Nomor Telepon" />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter">
+    <div class="newsletter-container" data-aos="fade-up">
+      <div class="newsletter-content">
+        <h3>Berlangganan Newsletter</h3>
+        <p>Dapatkan update terbaru dan promo eksklusif langsung ke email Anda</p>
+      </div>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Alamat Email" />
+        <button type="submit">Berlangganan</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <div class="logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <span>Ethowear</span>
+          <span class="logo-accent">Salatiga</span>
+        </div>
+        <p>Sentuhan Etnik, Gaya Modern untuk generasi yang menghargai warisan budaya.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-links-column">
+          <h3>Produk</h3>
+          <ul>
+            <li><a href="#">Baju Etnik</a></li>
+            <li><a href="#">Aksesoris</a></li>
+            <li><a href="#">Totebag</a></li>
+            <li><a href="#">Best Seller</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-column">
+          <h3>Perusahaan</h3>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Tim Kami</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Testimonial</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Cara Pemesanan</a></li>
+            <li><a href="#">Pengiriman</a></li>
+            <li><a href="#">Kebijakan Pengembalian</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ethowear Collection Salatiga. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Syarat & Ketentuan</a>
+        <a href="#">Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS
+AOS.init({
+  duration: 1000,
+  once: true,
+  offset: 100
+});
+
+// Hamburger menu logic - fix for mobile
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      // Prevent body scrolling when menu is open
+      document.body.classList.toggle('menu-open');
+    });
+  }
+
+  // Close menu when clicking on links
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (navLinks.classList.contains('active') && 
+        !event.target.closest('.nav-links') && 
+        !event.target.closest('.hamburger')) {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    }
+  });
+
+  // Product Filtering
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const produktCards = document.querySelectorAll('.produk-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      btn.classList.add('active');
+      
+      const filter = btn.getAttribute('data-filter');
+      
+      produktCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Back to top button
+  const backToTopBtn = document.querySelector('.back-to-top');
+  
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+  
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Custom cursor (if available)
+  const cursor = document.querySelector('.cursor');
+  const cursorFollower = document.querySelector('.cursor-follower');
+
+  if (cursor && cursorFollower) {
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      
+      setTimeout(() => {
+        cursorFollower.style.left = e.clientX + 'px';
+        cursorFollower.style.top = e.clientY + 'px';
+      }, 100);
+    });
+
+    // Add hover effect to nav links and other elements
+    const hoverElements = document.querySelectorAll('.nav-link, .cta-button, .view-more-btn, .social-icon');
+    hoverElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        cursor.classList.add('hover');
+        cursorFollower.classList.add('hover');
+      });
+      
+      element.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        cursorFollower.classList.remove('hover');
+      });
+    });
+  }
+});
+  </script>
 </body>
 </html>
