@@ -446,3 +446,67 @@ button:hover, .btn:hover {
           margin-left: 0;
         }
       }
+
+      .produk-etalase {
+        padding: 60px 20px;
+        background: #1f1f1f;
+        color: #fff;
+      }
+      
+      .container-etl {
+        max-width: 1100px;
+        margin: auto;
+      }
+      
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+      
+      .produk-item {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      
+      .produk-item:hover {
+        transform: translateY(-5px);
+      }
+      
+      .produk-item img {
+        width: 100%;
+        object-fit: cover;
+        border-bottom: 1px solid #333;
+      }
+      
+      .produk-item h3 {
+        font-size: 1.2rem;
+        margin: 15px 0 10px;
+        color: #ffcc70;
+      }
+      
+      .produk-item p {
+        font-size: 0.95rem;
+        color: #ddd;
+        margin: 0 20px 15px;
+      }
+      
+      .checkout-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background: #ffcc70;
+        color: #1f1f1f;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+      
+      .checkout-btn:hover {
+        background: #ffdd88;
+      }
+      
