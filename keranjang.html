@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethowear Collection Salatiga</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style-responsive.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <!-- Custom Cursor (Optional) -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+          <span>Ethowear</span>
+          <span class="logo-accent">Salatiga</span>
+        </div>
+        <button class="hamburger" aria-label="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Produk</a></li>
+          <li><a href="index.html" class="nav-link">Tentang</a></li>
+          <li><a href="index.html" class="nav-link">Kontak</a></li>
+          <li><a href="#" class="nav-link cart-icon"><i class="fas fa-shopping-bag"></i></a></li>
+        </ul>
+      </nav>
+      
+    <div class="hero">
+      <div class="hero-content">
+        <h2>Ethowear Collection Salatiga</h2>
+        <h1>Sentuhan Etnik,<br><span class="accent-text">Gaya Modern</span></h1>
+        <p>Checkout Sekarang<br class="hide-mobile"></p>
+        
+      </div>
+    </div>
+  </header>
+  <section class="produk-etalase">
+    <div class="container-etl">
+      <div class="produk-grid">
+        <!-- Kartu Produk -->
+        <div class="produk-item">
+          <img src="img/baju1.png" alt="Produk 1">
+          <h3>Kaos EAST Original</h3>
+          <p>Desain klasik dari Timur Indonesia</p>
+          <a href="https://www.tiktok.com/@tokomu" target="_blank" class="checkout-btn">Beli</a>
+        </div>
+        <div class="produk-item">
+          <img src="img/depan1.png" alt="Produk 2">
+          <h3>Kaos Etnik Nusantara</h3>
+          <p>Motif budaya yang modern</p>
+          <a href="https://www.tiktok.com/@tokomu" target="_blank" class="checkout-btn">Beli</a>
+        </div>
+        <div class="produk-item">
+          <img src="img/" alt="Produk 3">
+          <h3>Kaos EAST Bold</h3>
+          <p>Printed premium, bahan adem</p>
+          <a href="https://www.tiktok.com/@tokomu" target="_blank" class="checkout-btn">Checkout di TikTok</a>
+        </div>
+        <div class="produk-item">
+          <img src="img/" alt="Produk 4">
+          <h3>Kaos Simbol Emas</h3>
+          <p>Nuansa etnik dan eksklusif</p>
+          <a href="https://www.tiktok.com/@tokomu" target="_blank" class="checkout-btn">Checkout di TikTok</a>
+        </div>
+        <div class="produk-item">
+          <img src="img/kaos5.png" alt="Produk 5">
+          <h3>Kaos EAST Retro</h3>
+          <p>Gaya lama, kualitas baru</p>
+          <a href="https://www.tiktok.com/@tokomu" target="_blank" class="checkout-btn">Checkout di TikTok</a>
+        </div>
+        <div class="produk-item">
+          <img src="img/kaos6.png" alt="Produk 6">
+          <h3>Kaos Ethowear Signature</h3>
+          <p>Terbatas & edisi khusus</p>
+          <a href="https://www.tiktok.com/@tokomu" target="_blank" class="checkout-btn">Checkout di TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS
+AOS.init({
+  duration: 1000,
+  once: true,
+  offset: 100
+});
+
+// Hamburger menu logic - fix for mobile
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      // Prevent body scrolling when menu is open
+      document.body.classList.toggle('menu-open');
+    });
+  }
+
+  // Close menu when clicking on links
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (navLinks.classList.contains('active') && 
+        !event.target.closest('.nav-links') && 
+        !event.target.closest('.hamburger')) {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    }
+  });
+
+  // Product Filtering
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const produktCards = document.querySelectorAll('.produk-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      btn.classList.add('active');
+      
+      const filter = btn.getAttribute('data-filter');
+      
+      produktCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Back to top button
+  const backToTopBtn = document.querySelector('.back-to-top');
+  
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+  
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Custom cursor (if available)
+  const cursor = document.querySelector('.cursor');
+  const cursorFollower = document.querySelector('.cursor-follower');
+
+  if (cursor && cursorFollower) {
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      
+      setTimeout(() => {
+        cursorFollower.style.left = e.clientX + 'px';
+        cursorFollower.style.top = e.clientY + 'px';
+      }, 100);
+    });
+
+    // Add hover effect to nav links and other elements
+    const hoverElements = document.querySelectorAll('.nav-link, .cta-button, .view-more-btn, .social-icon');
+    hoverElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        cursor.classList.add('hover');
+        cursorFollower.classList.add('hover');
+      });
+      
+      element.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        cursorFollower.classList.remove('hover');
+      });
+    });
+  }
+});
+  </script>
+</body>
+</html>
