@@ -145,22 +145,20 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 .cta-button {
-  padding: 0.9rem 2rem;
-  border-radius: 50px;
-  text-transform: uppercase;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #d4af37, #f5d76e);
+  color: #111;
   font-weight: 600;
-  border: 2px solid var(--gold);
-  background: var(--gold);
-  color: var(--dark);
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition);
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
 .cta-button:hover {
-  background: transparent;
-  color: var(--gold);
-  box-shadow: 0 0 15px var(--gold);
+  box-shadow: 0 0 15px rgba(212,175,55,0.7);
+  transform: translateY(-3px);
 }
 
 .cta-button::before {
@@ -319,5 +317,17 @@ h1, h2, h3 {
   .hero-content h1 {
     font-size: 2rem;
   }
+}
+
+.featured-banner {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/featured-bg.jpg") center/cover no-repeat;
+  color: white;
+  padding: 100px 5%;
+  text-align: center;
+}
+.featured-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
 }
 
