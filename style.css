@@ -8,101 +8,111 @@
 }
 
 :root {
-  --primary-color: #ff3e3e;
-  --secondary-color: #2c2c2c;
-  --accent-color: #00ffff;
-  --dark-bg: #121212;
-  --darker-bg: #0a0a0a;
+  --neon-blue: #00f3ff;
+  --neon-pink: #ff00ff;
+  --neon-purple: #bc13fe;
+  --dark-bg: #0a0a0a;
+  --darker-bg: #050505;
   --light-text: #ffffff;
-  --grey-text: #b0b0b0;
-  --dark-text: #e0e0e0;
-  --card-bg: rgba(44, 44, 44, 0.8);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  --shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@font-face {
+  font-family: 'Cyberpunk';
+  src: url('path-to-your-cyberpunk-font.woff2') format('woff2');
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  font-family: 'Cyberpunk', sans-serif;
+  background-color: var(--dark-bg);
   color: var(--light-text);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 /* ========================================
-   NAVBAR
+   GLITCH EFFECT
 ======================================== */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1rem 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(18, 18, 18, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--accent-color);
-  z-index: 1000;
-  transition: var(--transition);
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--primary-color);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-}
-
-.nav-link {
-  color: var(--light-text);
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: 500;
+.glitch {
   position: relative;
-  transition: var(--transition);
+  color: var(--neon-blue);
+  font-size: 4rem;
+  letter-spacing: 5px;
+  animation: glitch 1s infinite;
+  text-shadow: 
+    2px 2px var(--neon-pink),
+    -2px -2px var(--neon-purple);
 }
 
-.nav-link::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: var(--accent-color);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+/* ========================================
+   NEON BORDER
+======================================== */
+.neon-border {
+  border: 4px solid var(--neon-blue);
+  box-shadow: 
+    0 0 5px var(--neon-blue),
+    0 0 10px var(--neon-blue),
+    0 0 20px var(--neon-blue),
+    0 0 40px var(--neon-blue);
+  animation: neon-pulse 1.5s infinite alternate;
 }
 
-.nav-link:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
+@keyframes neon-pulse {
+  from {
+    box-shadow: 
+      0 0 5px var(--neon-blue),
+      0 0 10px var(--neon-blue),
+      0 0 20px var(--neon-blue),
+      0 0 40px var(--neon-blue);
+  }
+  to {
+    box-shadow: 
+      0 0 10px var(--neon-blue),
+      0 0 20px var(--neon-blue),
+      0 0 40px var(--neon-blue),
+      0 0 80px var(--neon-blue);
+  }
 }
 
 /* ========================================
    BUTTONS
 ======================================== */
-.btn {
-  padding: 12px 24px;
-  font-size: 1rem;
+.cyber-button {
+  background: var(--darker-bg);
+  color: var(--neon-blue);
+  border: 2px solid var(--neon-blue);
+  padding: 15px 30px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 600;
-  color: var(--light-text);
-  background-color: var(--primary-
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.cyber-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left:
