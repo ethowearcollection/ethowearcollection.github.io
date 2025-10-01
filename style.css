@@ -303,7 +303,7 @@ section {
   border-radius: 6px; 
 } 
   
-.price-new { font-size: 38px; 
+.price-new { font-size: 28px; 
   font-weight: 700; color: #ff4444; 
   text-shadow: 0 0 6px rgba(255, 252, 252, 0.581); 
 }
@@ -595,3 +595,4 @@ footer {
     padding: 20px 30px;
   }
 }
+
