@@ -1,249 +1,228 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ethowear Collection Salatiga - Fashion etnik Indonesia dengan desain modern"
-    />
-    <title>Ethowear Collection Salatiga</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img
-          src="img/ECS LOGO.png"
-          alt="Ethowear Collection"
-          class="logo-img"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ethowear Collection Salatiga - Fashion etnik Indonesia dengan desain modern" />
+  <title>Ethowear Collection Salatiga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/ECS LOGO.png" alt="Ethowear Collection" class="logo-img" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#produk" class="nav-link">PRODUK</a></li>
+      <li><a href="#tentang" class="nav-link">TENTANG</a></li>
+      <li><a href="#kontak" class="nav-link">KONTAK</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-bg">
+      <source src="img/baju.mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="product-section reveal">
+    <div class="product-overlay"></div>
+    <div class="product-content">
+      <span class="product-tag">NEW PRODUCT</span>
+      <h2>INDONESIA Bagian Tengah</h2>
+      <p>Desain unik dengan bahan nyaman premium. Cocok untuk berbagai acara formal maupun kasual.</p>
+      <div class="price-box">
+        <span class="price-old">Rp170.000</span>
+        <span class="price-new">Rp139.000</span>
       </div>
-      <ul class="nav-links">
-        <li><a href="#produk" class="nav-link">PRODUK</a></li>
-        <li><a href="#tentang" class="nav-link">TENTANG</a></li>
-        <li><a href="#kontak" class="nav-link">KONTAK</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="btn-group">
+        <button class="btn btn-shop" data-title="INDONESIA Bagian Tengah" data-url="https://my-flask-app-production-9042.up.railway.app/login?item=tengah">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="btn btn-share" data-title="INDONESIA Bagian Tengah" data-text="Cek kaos etnik keren dari Ethowear Collection!" data-url="https://my-flask-app-production-9042.up.railway.app/login?item=tengah">
+          <i class="fas fa-share-alt"></i>
+        </button>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <video autoplay muted loop playsinline class="hero-bg">
-        <source src="img/baju.mp4" />
-      </video>
-      <div class="hero-overlay"></div>
-      
-    </section>
-
-  <!-- Product Section 1 --> 
-    <section id="produk" class="product-section reveal"> 
-      <div class="product-overlay"></div> 
-      <div class="product-content"> 
-        <span class="product-tag">NEW PRODUCT</span> 
-          <h2>INDONESIA Bagian Tengah</h2> 
-          <p> Desain unik dengan bahan nyaman premium. Cocok untuk berbagai acara formal maupun kasual. </p> 
-        <div class="price-box"> 
-          <span class="price-old">Rp170.000</span> 
-          <span class="price-new">Rp139.000</span> 
-        </div> 
-        <div class="btn-group">
-    <button class="btn btn-shop"
-            aria-label="Beli INDONESIA Bagian Tengah"
-            data-title="INDONESIA Bagian Tengah"
-            data-url="https://my-flask-app-production-9042.up.railway.app/login?ref=produk&item=tengah">
-      <i class="fas fa-shopping-cart"></i>
-    </button>
-    <button class="btn btn-share"
-            aria-label="Bagikan INDONESIA Bagian Tengah"
-            data-title="INDONESIA Bagian Tengah"
-            data-text="Cek kaos etnik keren dari Ethowear Collection!"
-            data-url="https://my-flask-app-production-9042.up.railway.app/login?ref=share&item=tengah">
-      <i class="fas fa-share-alt"></i>
-    </button>
-  </div>
-    </section> 
-    
-    <!-- Product Section 2 --> 
-    <section id="produk" 
-      class="product-section reveal" style="background-image: url('img/kaos.png')" > 
-      <div class="product-overlay"></div> 
-      <div class="product-content"> 
-        <span class="product-tag">NEW PRODUCT</span> 
-        <h2>INDONESIA Bagian Barat</h2> 
-        <p> Bahan dan percetakan premium dengan motif eksklusif yang mencerminkan keindahan budaya Nusantara. </p> 
-        <div class="price-box"> 
-          <span class="price-old">Rp170.000</span> 
-          <span class="price-new">Rp139.000</span> 
-        </div> <div class="btn-group"> 
-          <button class="btn"><i class="fas fa-shopping-cart"></i></button> 
-          <button class="btn"><i class="fas fa-share-alt"></i></button> 
-        </div> 
-      </div> 
-    </section> 
-    
-    <section id="produk" class="product-section reveal" style="background-image: url('img/kaos4.png')" > 
-      <div class="product-overlay"></div> <div class="product-content"> <span class="product-tag">NEW PRODUCT</span> 
-        <h2>INDONESIA Bagian Timur</h2> 
-        <p> Bahan dan percetakan premium dengan motif eksklusif yang mencerminkan keindahan budaya Nusantara. </p> 
-        <div class="price-box"> <span class="price-old">Rp170.000</span> 
-          <span class="price-new">Rp139.000</span> </div> 
-        <div class="btn-group"> 
-          <button class="btn"><i class="fas fa-shopping-cart"></i></button> 
-          <button class="btn"><i class="fas fa-share-alt"></i></button> 
-        </div> 
-      </div> 
-    </section>
-
-
-    <!-- About Section -->
-    <section id="tentang" class="about-section reveal">
-      <div class="about-overlay"></div>
-      <div class="about-content">
-        <span class="section-tag">Tentang Kami</span>
-        <h2>Perpaduan Kearifan Lokal & Desain Modern</h2>
-        <p>
-          Ethowear Salatiga lahir dari kecintaan kami terhadap kekayaan budaya
-          Indonesia. Kami menghadirkan produk fashion yang memadukan kearifan
-          lokal dengan gaya modern agar tetap relevan dan stylish.
-        </p>
-        <p>
-          Setiap produk dibuat dengan cinta oleh pengrajin lokal terbaik,
-          menggunakan material berkualitas dan proses produksi yang bertanggung
-          jawab.
-        </p>
-        <div class="features">
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>100% Buatan Lokal</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Bahan Berkualitas</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Desain Ekslusif</span>
-          </div>
-        </div>
+  <section class="product-section reveal" style="background-image: url('img/kaos.png')">
+    <div class="product-overlay"></div>
+    <div class="product-content">
+      <span class="product-tag">NEW PRODUCT</span>
+      <h2>INDONESIA Bagian Barat</h2>
+      <p>Bahan dan percetakan premium dengan motif eksklusif yang mencerminkan keindahan budaya Nusantara.</p>
+      <div class="price-box">
+        <span class="price-old">Rp170.000</span>
+        <span class="price-new">Rp139.000</span>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="kontak" class="contact-section reveal">
-      <div class="contact-header">
-        <span class="section-tag">Hubungi Kami</span>
-        <h2>Kami Siap Membantu</h2>
+      <div class="btn-group">
+        <button class="btn btn-shop" data-title="INDONESIA Bagian Barat" data-url="https://my-flask-app-production-9042.up.railway.app/login?item=barat">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="btn btn-share" data-title="INDONESIA Bagian Barat" data-text="Cek kaos etnik keren dari Ethowear Collection!" data-url="https://my-flask-app-production-9042.up.railway.app/login?item=barat">
+          <i class="fas fa-share-alt"></i>
+        </button>
       </div>
+    </div>
+  </section>
 
-      <div class="contact-grid">
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <h3>Lokasi</h3>
-          <p>Jl. Diponegoro No. 123<br />Salatiga, Jawa Tengah</p>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <h3>Email</h3>
-          <p>ethowearcollection<br />@email.com</p>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-phone-alt"></i>
-          </div>
-          <h3>Telepon</h3>
-          <p>+62 8123 4567 890<br />Senin - Sabtu, 09:00 - 17:00</p>
-        </div>
+  <section class="product-section reveal" style="background-image: url('img/kaos4.png')">
+    <div class="product-overlay"></div>
+    <div class="product-content">
+      <span class="product-tag">NEW PRODUCT</span>
+      <h2>INDONESIA Bagian Timur</h2>
+      <p>Bahan dan percetakan premium dengan motif eksklusif yang mencerminkan keindahan budaya Nusantara.</p>
+      <div class="price-box">
+        <span class="price-old">Rp170.000</span>
+        <span class="price-new">Rp139.000</span>
       </div>
-
-      <div class="social-links">
-        <a href="https://www.instagram.com/ethowear.id?utm_source=ig_web_button_share_sheet&igsh=MWVrOXVhNW12YzMzaw==" class="social-btn"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@ethowearcollection?_t=ZS-90GyKcxbGXB&_r=1" class="social-btn"><i class="fab fa-tiktok"></i></a>
-        <a href="https://wa.me/+6285168669908" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+      <div class="btn-group">
+        <button class="btn btn-shop" data-title="INDONESIA Bagian Timur" data-url="https://my-flask-app-production-9042.up.railway.app/login?item=timur">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="btn btn-share" data-title="INDONESIA Bagian Timur" data-text="Cek kaos etnik keren dari Ethowear Collection!" data-url="https://my-flask-app-production-9042.up.railway.app/login?item=timur">
+          <i class="fas fa-share-alt"></i>
+        </button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Ethowear Collection Salatiga. All rights reserved.</p>
-    </footer>
+  <!-- Tentang -->
+  <section id="tentang" class="about-section reveal">
+    <div class="about-overlay"></div>
+    <div class="about-content">
+      <span class="section-tag">Tentang Kami</span>
+      <h2>Perpaduan Kearifan Lokal & Desain Modern</h2>
+      <p>Ethowear Salatiga lahir dari kecintaan kami terhadap kekayaan budaya Indonesia. Kami menghadirkan produk fashion yang memadukan kearifan lokal dengan gaya modern agar tetap relevan dan stylish.</p>
+      <p>Setiap produk dibuat dengan cinta oleh pengrajin lokal terbaik, menggunakan material berkualitas dan proses produksi yang bertanggung jawab.</p>
+      <div class="features">
+        <div class="feature-item"><i class="fas fa-check-circle"></i><span>100% Buatan Lokal</span></div>
+        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Bahan Berkualitas</span></div>
+        <div class="feature-item"><i class="fas fa-check-circle"></i><span>Desain Ekslusif</span></div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      // Hamburger menu toggle
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
+  <!-- Kontak -->
+  <section id="kontak" class="contact-section reveal">
+    <div class="contact-header">
+      <span class="section-tag">Hubungi Kami</span>
+      <h2>Kami Siap Membantu</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Lokasi</h3>
+        <p>Jl. Diponegoro No. 123<br/>Salatiga, Jawa Tengah</p>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email</h3>
+        <p>ethowearcollection<br/>@email.com</p>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+        <h3>Telepon</h3>
+        <p>+62 8123 4567 890<br/>Senin - Sabtu, 09:00 - 17:00</p>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ethowear.id?utm_source=ig_web_button_share_sheet&igsh=MWVrOXVhNW12YzMzaw==" class="social-btn"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ethowearcollection?_t=ZS-90GyKcxbGXB&_r=1" class="social-btn"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/+6285168669908" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        hamburger.classList.toggle("active");
+  <footer>
+    <p>&copy; 2025 Ethowear Collection Salatiga. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
       });
+    });
 
-      // Close menu when clicking nav link
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-          hamburger.classList.remove("active");
-        });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
       });
+    });
 
-      // Smooth scroll dengan snap
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        });
+    // Reveal on scroll
+    function revealOnScroll() {
+      document.querySelectorAll(".reveal").forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const visible = 100;
+        if (elementTop < windowHeight - visible) el.classList.add("active");
+        else el.classList.remove("active");
       });
+    }
+    window.addEventListener("scroll", revealOnScroll);
 
+    // SHOPPING
+    document.querySelectorAll('.btn-shop').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const url = btn.getAttribute('data-url') || 'https://my-flask-app-production-9042.up.railway.app/login';
+        window.location.href = url;
+      });
+    });
 
-      
-      function revealOnScroll() {
-        const reveals = document.querySelectorAll(".reveal");
-        for (let i = 0; i < reveals.length; i++) {
-          const windowHeight = window.innerHeight;
-          const elementTop = reveals[i].getBoundingClientRect().top;
-          const elementVisible = 100; // jarak sebelum animasi mulai
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
+    // SHARE
+    async function copyToClipboard(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        alert("Link disalin ke clipboard!");
+      } catch {
+        const ta = document.createElement("textarea");
+        ta.value = text; document.body.appendChild(ta);
+        ta.select(); document.execCommand("copy");
+        document.body.removeChild(ta);
+        alert("Link disalin ke clipboard!");
       }
-      window.addEventListener("scroll", revealOnScroll);<script>
-  
-</script>   
-    </script>
-  </body>
+    }
+
+    document.querySelectorAll('.btn-share').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const title = btn.getAttribute('data-title') || 'Ethowear Collection';
+        const text = btn.getAttribute('data-text') || 'Lihat produk Ethowear Collection!';
+        const url = btn.getAttribute('data-url') || window.location.href;
+        if (navigator.share) {
+          try {
+            await navigator.share({ title, text, url });
+          } catch (e) {
+            if (e.name !== "AbortError") await copyToClipboard(url);
+          }
+        } else {
+          await copyToClipboard(url);
+        }
+      });
+    });
+  </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
