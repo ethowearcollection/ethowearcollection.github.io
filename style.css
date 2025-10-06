@@ -81,6 +81,25 @@ body {
   text-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
+.nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-links .login-link i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* Mobile mode */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links.active .login-link {
+  padding: 10px 0;
+}
 
 
 
@@ -595,3 +614,4 @@ footer {
     padding: 20px 30px;
   }
 }
+
