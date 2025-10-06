@@ -232,62 +232,11 @@
       }
       window.addEventListener("scroll", revealOnScroll);<script>
   
-</script>
-<script>
-  // === SHOPPING: langsung ke web app login ===
-  document.querySelectorAll('.btn-shop').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const url = btn.getAttribute('data-url') 
-        || 'https://my-flask-app-production-9042.up.railway.app/login';
-      // Bisa tambahkan tracking sederhana
-      const title = encodeURIComponent(btn.getAttribute('data-title') || 'produk');
-      const finalUrl = url.includes('?') ? `${url}&title=${title}` : `${url}?title=${title}`;
-      window.location.href = finalUrl;
-    });
-  });
-
-  // === SHARE: Web Share API + fallback copy link ===
-  async function copyToClipboard(text) {
-    try {
-      await navigator.clipboard.writeText(text);
-      alert('Link disalin ke clipboard!');
-    } catch {
-      // Fallback terakhir kalau Clipboard API tidak tersedia
-      const ta = document.createElement('textarea');
-      ta.value = text; document.body.appendChild(ta);
-      ta.select(); document.execCommand('copy');
-      document.body.removeChild(ta);
-      alert('Link disalin ke clipboard!');
-    }
-  }
-
-  document.querySelectorAll('.btn-share').forEach(btn => {
-    btn.addEventListener('click', async () => {
-      const title = btn.getAttribute('data-title') || 'Ethowear Collection';
-      const text  = btn.getAttribute('data-text')  || 'Lihat produk Ethowear Collection!';
-      const url   = btn.getAttribute('data-url')   || window.location.href;
-
-      if (navigator.share) {
-        try {
-          await navigator.share({ title, text, url });
-        } catch (e) {
-          // Jika user menutup dialog share, kita diam saja
-          // Kalau ada error teknis lain, gunakan fallback
-          if (e && e.name !== 'AbortError') await copyToClipboard(url);
-        }
-      } else {
-        // Fallback: salin link ke clipboard
-        await copyToClipboard(url);
-      }
-    });
-  });
-</script>
-
-
-      
+</script>   
     </script>
   </body>
 </html>
+
 
 
 
